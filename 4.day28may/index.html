@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q1.Write a program to check if a number is positive, negative, or zero.
+
+        // // with if and ternary operator-----
+
+        //     function check(num) {
+        //         if (num > 0) {
+        //             console.log(`${num} is positive`);
+        //         }
+        //         else if (num < 0) {
+        //             console.log(`${num} is negative`);
+        //         }
+        //         else {
+        //             console.log(`${num} is zero`);
+        //         }
+        //     }
+        // check(12)
+
+        // function check(num) {
+        //     let res = (num > 0) ? `${num} is positive` : (num < 0) ? `${num} is negative` : `${num} is zero`
+        //     console.log(res);
+        // }
+        // check(12)
+
+        // Q2.Create a list of 10 numbers.Write a function to find the maximum and minimum number from the list.
+
+        let arr = [1, 4, 2, 7, 9, 10]
+        let arr2 = arr.sort((a, b) => {
+            return a - b
+        })
+        console.log(`min is ${arr2[0]} & max is ${arr2[arr2.length-1]}`);
+
+        // Q3.Write a program to count even and odd numbers in a list.
+
+        // let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        // function count(arr) {
+        //     let even = 0
+        //     let odd = 0
+        //     for (i of arr) {
+        //         (i%2==0)?even++:odd++
+        //     }
+        //     return `${even} even numbers & ${odd} odd numbers`
+        // }
+        // console.log(count(arr));
+
+        // Q4.Create a list of student marks.Write a function to return grades(A / B / C / Fail) based on average marks.
+
+        // let marks = [80, 78, 50, 78, 81, 56]
+
+        // function grades(marks) {
+        //     sum = 0
+        //     for (i of marks) {
+        //         sum += i
+        //     }
+        //     let avg = sum / marks.length
+        //     if (avg >= 85) {
+        //         return `AVG-${avg} GRADE-A`
+        //     }
+        //     else if (avg >= 65) {
+        //         return `AVG-${avg} GRADE-B`
+        //     }
+        //     else if (avg >= 40) {
+        //         return `AVG-${avg} GRADE-C`
+        //     }
+        //     else {
+        //         return `AVG-${avg} FAIL`
+        //     }
+        // }
+        // console.log(grades(marks));
+
+        // Q5.Write a function to remove duplicates from a list.
+
+        // let arr = [1, 2, 3, 4, 1, 2];
+        // function dup(arr) {
+        //     let arr1 = [];
+        //     for (i of arr) {
+        //         if (!arr1.includes(i)) {
+        //             arr1.push(i);
+        //         }
+        //     }
+        //     return arr1
+        // }
+        // console.log(dup(arr));
+
+        // JS-----
+
+        // Q1.Write a function that checks if a number is odd or even, and displays the result using alert().
+
+        // function check(num){
+        //     (num%2==0)?alert(`${num} is even`):alert(`${num} is odd`)
+        // }
+        // check(10)
+
+        // Q2.Create a form input where the user enters a number.Add a button that checks if the number is divisible by 5 and shows the result in a < p > tag.
+
+        // let inp=document.createElement("input")
+        // inp.setAttribute("type","number")
+
+        // let btn=document.createElement("button")
+        // btn.innerText="CHECK"
+
+        // let para=document.createElement("p")
+
+        // btn.addEventListener("click",()=>{
+        //     (inp.value%5==0)?para.innerText=`${inp.value} is divisible by 5`:para.innerText=`${inp.value} is not divisible by 5`
+
+        // })
+        // document.body.append(inp,btn,para)
+
+
+        // Q3.Create an array of colors.Write a function to display all colors in a list(<ul>) when a button is clicked.
+
+        // let colors = ["Red", "Blue", "Green", "Yellow", "Orange", "Purple", "Pink", "Brown", "Black", "White"];
+
+        // let btn = document.createElement("button")
+        // btn.innerText = "CLICK ME"
+
+        // btn.addEventListener("click", () => {
+        //     colors.forEach((val) => {
+        //         let li = document.createElement("li");
+        //         li.innerText = val;
+        //         document.body.append(li);
+        //     })
+        // })
+        // document.body.append(btn)
+
+
+        // 4.	Write a function that accepts an array and returns the sum of all elements.
+
+        // function sum(arr){
+        //     total=0
+        //     for(i of arr){
+        //         total+=i
+        //     }
+        //     return total
+        // }
+        // console.log(sum([1,2,3,4,5,6,7,8,9]));
+
+        // Q5.Create an array of strings and count how many strings have length > 5.
+
+        // let colors = ["Red", "Blue", "Green", "Yellow", "Orange", "Purple", "Pink", "Brown", "Black", "White"];
+        // count = 0
+        // colors.forEach((val)=>{
+        //     (val.length > 5) ? count++ : ""
+        // })
+        // console.log(`There are ${count} strings with length>5`);
+
+
+
+
+    </script>
+</body>
+
+</html>
