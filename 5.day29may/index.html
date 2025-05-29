@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Q1.Write a program to reverse a string without using built-in functions.
+
+        // const str = "hello"
+        // let rev = ""
+        // for (i = str.length - 1; i >= 0; i--) {
+        //     rev += str[i]
+        // }
+        // console.log(rev);
+
+        // OR-----
+
+        // for (i = 0; i < str.length; i++) {
+        //     rev = str[i] + rev;
+        // }
+        // console.log(rev);
+
+        // Q2.Write a function that takes a list of strings and returns a new list with strings that start with a vowel.
+
+        // const arr = ["apple", "banana", "orange", "dragonfruit", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon"];
+
+        // let newarr = []
+        // const vow = "aeiou"
+        // for (i = 0; i < arr.length; i++) {
+        //     if (vow.includes(arr[i][0])) {
+        //         newarr.push(arr[i])
+        //     }
+        // }
+        // console.log(newarr);
+
+        // Q3.Write a program to print the Fibonacci series up to n terms using a loop.
+
+        // const num = 10;
+        // let first = 0;
+        // let second = 1;
+        // for (i = 0; i < num; i++) {
+        //     console.log(first);
+        //     next = first + second
+        //     first = second
+        //     second = next
+        // }
+
+        // Q4.Create a function to check if a string is a palindrome.
+
+        // function palin(str) {
+        //     const rev = str.split("").reverse().join("")
+        //     res = (str === rev) ? console.log(`${str} is palindrome`) : console.log(`${str} is not a palindrome`)
+        // }
+        // palin("malayalam")
+
+        // Q5.Write a program to count the number of words in a sentence entered by the user.
+
+        // let str = " JavaScript     is a         versatile ";
+        // let res = str.split(" ")
+        // let words = []
+        // let str2=""
+        // for (i = 0; i < res.length; i++) {
+        //     if (res[i] !== "") {
+        //         words.push(res[i])
+        //         str2+=res[i]+" "
+        //     }
+        // }
+        // console.log(`${words.length} words in "${str2}"`);
+
+
+        // JS-------
+        // Q1.Write a function to reverse a string and display the result using alert().
+
+        // function rev(str){
+        //     alert(`reversed string is ${str.split("").reverse().join("")}`)
+        // }
+        // rev("java script")
+
+        // Q2.Create a form where the user enters a sentence.On clicking a button, display how many words are in that sentence in a < p > tag.
+
+        // let inp = document.createElement("input")
+        // let btn = document.createElement("button")
+        // btn.innerText = "CLICK ME"
+        // para = document.createElement("para")
+        // para.style.display="block"
+
+        // btn.addEventListener("click", () => {
+        //     let str = inp.value;
+        //     let res = str.split(" ")
+        //     let words = []
+        //     let str2 = ""
+        //     for (i = 0; i < res.length; i++) {
+        //         if (res[i] !== "") {
+        //             words.push(res[i])
+        //             str2 += res[i] + " "
+        //         }
+        //     }
+        //     para.innerText = `${words.length} words in "${str2}"`
+        // })
+        // document.body.append(inp, btn,para)
+
+
+        // Q3.Create an array of names.When a button is clicked, display only the names that have more than 5 characters inside a < ul >.
+
+        // const arr = ["apple", "banana", "orange", "dragonfruit", "elderberry", "fig", "grape", "honeydew", "kiwi", "lemon"];
+
+        // let btn = document.createElement("button")
+        // btn.innerText = "CLICK ME"
+        // btn.addEventListener("click", () => {
+        //     for (i of arr) {
+        //         if (i.length > 5) {
+        //             li = document.createElement("li")
+        //             li.innerText = i
+        //             document.body.append(li)
+        //         }
+        //     }
+        // })
+        // document.body.append(btn)
+
+
+        // Q4.Write a function that takes a string and returns true if it's a palindrome. 
+        // function palin(str){
+        //     str2=str.split("").reverse().join("");
+        //     if(str===str2){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // }
+        // console.log(palin("malayalam"));
+
+
+        // Q5.Create a loop that prints numbers from 1 to 50 in the console, but prints "Fizz" for multiples of 3, "Buzz" for multiples of 5, and "FizzBuzz" for multiples of both.
+
+        for(i=1;i<=50;i++){
+            if(i%3==0 && i%5==0){
+                console.log(i,"FizzBuzz");
+            }
+            else if(i%5==0){
+                console.log(i,"Buzz");  
+            }
+            else if(i%3==0){
+                console.log(i,"Fizz");
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
